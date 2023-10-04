@@ -153,7 +153,7 @@
 	.container {
 		margin: 0 auto;
 		width: 80vw;
-		height: 73vh;
+		min-height: 73vh;
 		background: #1d1d1d;
 		padding: 20px;
 		text-align: center;
