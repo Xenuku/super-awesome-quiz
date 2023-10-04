@@ -103,14 +103,14 @@
 		<div class="scoring">
 			Score <span class="score">{score}</span> - Streak <span class="score">{streak}</span>
 		</div>
-		<div 
-			class="quiz-holder" 
+		<div
+			class="quiz-holder"
 			class:science={randomQuiz.category == 'Science'}
 			class:music={randomQuiz.category == 'Music'}
 			class:movies={randomQuiz.category == 'Movies'}
 			class:geography={randomQuiz.category == 'Geography'}
 			class:food={randomQuiz.category == 'Food'}
-			>
+		>
 			<div class="quiz-header">
 				<h1>
 					{randomQuiz.category}
@@ -165,7 +165,8 @@
 		margin: 0 auto;
 		border-radius: 2.5%;
 	}
-	.questions, .response-holder {
+	.questions,
+	.response-holder {
 		padding-top: 1rem;
 	}
 	.questions {
@@ -207,10 +208,10 @@
 		border: 0;
 		color: #e3e3e3;
 	}
-	
+
 	/* Conditional styles depending which category is chosen */
 	.movies {
-		background: #33C4C2;
+		background: #33c4c2;
 	}
 	.movies button {
 		background: #187876;
@@ -219,7 +220,7 @@
 		border-bottom: 2px solid #187876;
 	}
 	.science {
-		background: #FF858B;
+		background: #ff858b;
 	}
 	.science button {
 		background: #b24751;
@@ -228,16 +229,16 @@
 		border-bottom: 2px solid #b24751;
 	}
 	.music {
-		background: #957FF9;
+		background: #957ff9;
 	}
 	.music button {
-		background: #7E63F8;
+		background: #7e63f8;
 	}
 	.music h1 {
-		border-bottom: 2px solid #7E63F8;
+		border-bottom: 2px solid #7e63f8;
 	}
 	.food {
-		background: #4CB732;
+		background: #4cb732;
 	}
 	.food button {
 		background: #368023;
@@ -255,17 +256,19 @@
 		border-bottom: 2px solid #367db1;
 	}
 
-	button:hover {
-		background: #25201d;
-		color: orange;
-	}
-
-	@media(max-width: 1200px) {
+	@media (max-width: 1200px) {
 		.quiz-holder {
 			min-width: 80vw;
 		}
 		button {
 			width: 60vw;
+		}
+	}
+
+	@media (hover: hover) {
+		button:hover {
+			background: #25201d;
+			color: orange;
 		}
 	}
 </style>
