@@ -98,7 +98,7 @@
 
 <div class="container">
 	{#if error}
-		<h2>The super awesome quiz API is too popular! Please try your request again</h2>
+		<h2 class="error">The super awesome quiz API is too popular! Please try your request again</h2>
 	{/if}
 	{#if quizzes && randomQuiz}
 		<h1>
@@ -116,8 +116,6 @@
 			{#if randomQuiz.answers}
 				<ul>
 					{#each randomQuiz.answers as answer}
-						<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li>
 							<button on:click={submitAnswer(randomQuiz.id, answer.id)}>{answer.text}</button>
 						</li>
@@ -127,6 +125,7 @@
 		</div>
 	{:else}
 		<h2>Loading..</h2>
+		<span data-sveltekit-reload>Too popular? <a href="/">Refresh</a> the page</span>
 	{/if}
 </div>
 
@@ -160,6 +159,12 @@
 		list-style: none;
 		line-height: 1.5;
         margin-left: -40px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.error {
+		color: rgb(163, 3, 3);
 	}
 	strong {
 		font-size: 1.4rem;

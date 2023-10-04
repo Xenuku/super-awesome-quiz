@@ -14,4 +14,8 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: aqua;
     }
+    footer {
+        color: #e3e3e3;
+        padding: 10px 0;
+    }
 </style>
