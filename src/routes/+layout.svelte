@@ -13,9 +13,10 @@
     h1 {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: aqua;
+        margin-top: 12vh;
     }
     footer {
         color: #e3e3e3;
-        padding: 10px 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 </style>
